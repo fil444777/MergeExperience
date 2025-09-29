@@ -31,11 +31,14 @@ public class Module3Servlet extends HttpServlet {
                     + value.getOrder() + "</td><td>"
                     + value.getTopic() + "</td><td>"
                     + value.getDesc()
-                    + "</td><td><a href=''>Подробнее</a>"
+                    + "</td><td><a href=\"nofunction.html\">Подробнее</a>"
                     + "</td></tr>");
 
         out.println("</table>");
 
+        out.println("<a href=\"module2\"><- Предыдущий модуль</a>");
+        out.println("&nbsp;&nbsp;&nbsp;");
+        out.println("<a href=\"module4\">Следующий модуль -></a>");
 
         out.println("</body></html>");
     }

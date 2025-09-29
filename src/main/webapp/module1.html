@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обзор Java Enterprise технологий</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .highlight {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Обзор Java Enterprise технологий</h1>
+    <p>Основные стандарты и фреймворки для корпоративной разработки на Java</p>
+</header>
+
+<section>
+    <h2>Что такое Java Enterprise?</h2>
+    <p>
+        <strong>Java Enterprise</strong> (ранее Java EE, теперь — <strong>Jakarta EE</strong>) — это набор спецификаций и API,
+        предназначенных для разработки масштабируемых, надёжных и безопасных серверных приложений.
+    </p>
+    <p>
+        Используется для создания веб-приложений, микросервисов, ERP-систем и других корпоративных решений.
+    </p>
+</section>
+
+<section>
+    <h2>Основные технологии</h2>
+    <ul>
+        <li><strong>Servlet & JSP</strong> — обработка HTTP-запросов и генерация динамических страниц.</li>
+        <li><strong>JPA</strong> — работа с базами данных через ORM (Hibernate, EclipseLink).</li>
+        <li><strong>CDI</strong> — внедрение зависимостей и управление контекстами.</li>
+        <li><strong>EJB</strong> — компоненты бизнес-логики с поддержкой транзакций и безопасности.</li>
+        <li><strong>JAX-RS</strong> — создание RESTful API (например, с Jersey или RESTEasy).</li>
+        <li><strong>JSF</strong> — фреймворк для создания компонентного пользовательского интерфейса.</li>
+        <li><strong>JMS</strong> — асинхронный обмен сообщениями между системами.</li>
+        <li><strong>WebSockets</strong> — двусторонняя связь в реальном времени.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Jakarta EE: новое имя старой платформы</h2>
+    <p>
+        С 2018 года Java EE передана из Oracle в <strong>Eclipse Foundation</strong> и переименована в <strong>Jakarta EE</strong>.
+        Это привело к изменению пакетов:
+    </p>
+    <div class="highlight">
+        javax.servlet → jakarta.servlet<br>
+        javax.persistence → jakarta.persistence
+    </div>
+    <p>
+        Современные версии (Tomcat 10+, Spring Boot 3+) используют <code>jakarta.*</code>.
+    </p>
+</section>
+
+<section>
+    <h2>Где применяется?</h2>
+    <ul>
+        <li>Банковские системы</li>
+        <li>ERP и CRM (например, SAP, Oracle)</li>
+        <li>Государственные информационные системы</li>
+        <li>Микросервисы и облачные приложения</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Преимущества</h2>
+    <ul>
+        <li>Высокая производительность и масштабируемость</li>
+        <li>Поддержка транзакций, безопасности и многопоточности «из коробки»</li>
+        <li>Стандартизация и переносимость между серверами приложений</li>
+        <li>Богатая экосистема и инструменты для enterprise-разработки</li>
+    </ul>
+</section>
+
+<footer>
+    &copy; 2025 Обзор Java Enterprise технологий | Подготовлено для обучения
+</footer>
+
+</body>
+</html>
